@@ -1,0 +1,37 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs/pdf_split
+/pdf_split/x64
+/pdf_split/x64/Debug/pdf_split.tlog/CL.command.1.tlog
+/vcpkg_installed
+/x64
