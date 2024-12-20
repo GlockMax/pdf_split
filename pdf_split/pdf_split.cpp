@@ -158,15 +158,15 @@ void process_directory(const fs::path& input_dir, const fs::path& output_dir, in
 }
 
 int main(int argc, char* argv[]) {
-    /*
+    
     if (argc < 4) {
         std::cerr << "Usage: " << argv[0] << " <input_dir> <output_dir> <thread_count>" << std::endl;
         return 1;
-    }*/
+    }
     setlocale(LC_ALL, "Russian");
-    fs::path input_dir = "C:\\Users\\GlockMax\\Desktop\\in_pdfs"; //argv[1];
-    fs::path output_dir = "pdfs";//argv[2];
-    int thread_count = 6;//std::stoi(argv[3]);
+    fs::path input_dir = argv[1];
+    fs::path output_dir = argv[2];
+    int thread_count = std::stoi(argv[3]);
 
     if (!fs::exists(input_dir) || !fs::is_directory(input_dir)) {
         std::cerr << "Input directory does not exist or is not a directory." << std::endl;
